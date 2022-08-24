@@ -16,6 +16,14 @@
     display: grid;
     justify-content: center;
 }
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+  .email input:focus:invalid {
+    border:solid 2px #ee1b1b;
+    
+  }
 main{
     margin-top: 10px;
     border-radius: 10px;

@@ -9,22 +9,22 @@
   </head>
   <body>
     <div class="container">
+      <form action="">
       <main>
         <h1 class="title">Say Hello!</h1>
-
         <div class="name">
           <label for="name">Your Name</label><br>
-          <input type="text" name="name" id="name" placeholder="Enter your name">
+          <input type="text" name="name" id="name" placeholder="Enter your name" required>
         </div>
 
         <div class="email">
           <label for="email">Email</label> <br>
-          <input type="text" name="email" id="email" placeholder="Enter your email">
+          <input type="email" name="email" id="email" placeholder="Enter your email" required>
         </div>
 
         <div class="service">
           <label for="services-needed">Needed Services</label> <br>
-          <select name="services" id="services-needed">
+          <select name="services" id="services-needed" required>
             <option value="0">Choose Services</option>
             <option value="car">Car wash</option>
             <option value="house">House cleaning</option>
@@ -33,7 +33,7 @@
 
         <div class="budget-select">
           <label for="budget">Budget</label><br>
-          <select name="budget" id="budget" placeholder="Select Budget">
+          <select name="budget" id="budget" placeholder="Select Budget" required>
             <option value="0">Select Budget</option>
             <option value="100">£100</option>
             <option value="500">£500</option>
@@ -47,9 +47,12 @@
         </div>
 
         <div class="submit">
-          <button>Submit &#8594</button>
+          
+          <button type="submit">Submit &#8594</button>
+          
         </div>
       </main>
+    </form>
     </div>
     
   </body>
