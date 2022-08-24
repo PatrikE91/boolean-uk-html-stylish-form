@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --purple: #cc3cf4; 
+    --blue:#59bfde;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom left, var(--purple), var(--blue));
+    display: grid;
+    justify-content: center;
+}
+main{
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+    height: 540px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr) 150px 70px;
+}
+.title{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.name, .email, .service, .budget-select, .message{
+    border-bottom: solid 1px black ;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+} 
+label{
+    font-size: 10px;
+}
+input, select, textarea{
+    border: none;
+}
+
+::placeholder{
+    font-size: 13px;
+}
+
+.budget-select select{
+    width: 250px;
+    position: relative;
+    appearance: none;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/25/25756.png");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+}
+
+
+.service select{
+    width: 250px;
+    position: relative;
+    appearance: none;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/25/25756.png");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+}
+
+.submit{
+    place-self: center;
+}
+button{
+    width: 250px;
+    height: 25px;
+    color: white;
+    font-size: 12px;
+    background-image: linear-gradient(to left, var(--blue), var(--purple));
+    border-radius: 20px;
+    border: none;
+}
